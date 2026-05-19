@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineblaze Checker | Неоновый сканер</title>
+    <style>
+        :root {
+            /* Неоновый зеленый */
+            --neon-green: #39ff14; 
+            /* Темные фоны */
+            --bg-dark: #050a05;
+            --bg-card: #0a140a;
+            /* Текст */
+            --text-light: #d4f0d4;
+            /* Эффекты свечения */
+            --glow-box: 0 0 15px rgba(57, 255, 20, 0.3), inset 0 0 10px rgba(57, 255, 20, 0.1);
+            --glow-text: 0 0 10px rgba(57, 255, 20, 0.6);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at center, #0a170a 0%, var(--bg-dark) 100%);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--neon-green);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: var(--glow-text);
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            color: #a0c0a0;
+        }
+
+        .features {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            padding: 25px;
+            width: 220px;
+            /* Сильное закругление карточек */
+            border-radius: 25px;
+            border: 1px solid rgba(57, 255, 20, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neon-green);
+            box-shadow: var(--glow-box);
+        }
+
+        .feature-card h3 {
+            color: var(--neon-green);
+            margin-top: 0;
+            text-shadow: 0 0 5px rgba(57, 255, 20, 0.4);
+        }
+
+        .download-btn {
+            background-color: transparent;
+            color: var(--neon-green);
+            text-decoration: none;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            /* Форма "таблетки" (максимально закругленная) */
+            border-radius: 50px;
+            border: 2px solid var(--neon-green);
+            box-shadow: var(--glow-box);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: var(--neon-green);
+            color: var(--bg-dark);
+            box-shadow: 0 0 25px rgba(57, 255, 20, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.5);
+            text-shadow: none;
+        }
+
+        .version-info {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #5a8a5a;
+            background-color: rgba(10, 20, 10, 0.5);
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(57, 255, 20, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #4a6a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mineblaze Scanner</h1>
+    </header>
+
+    <div class="container">
+        <h2>Официальная проверка на читы</h2>
+        <p class="description">
+            Скачайте утилиту для прохождения быстрой проверки на сервере Mineblaze. 
+            Программа автоматически сканирует подозрительные модификации и гарантирует честную игру.
+        </p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>⚡ Скорость</h3>
+                <p>Умный алгоритм проверяет папки с игрой за считанные секунды.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Надежность</h3>
+                <p>Мы не собираем пароли. Код полностью безопасен для вашего ПК.</p>
+            </div>
+        </div>
+
+        <!-- ВАЖНО: Замените ссылку "https://github.com/..." на реальную ссылку на вашу программу -->
+        <a href="link_to_your_file.exe" class="download-btn" download>Скачать Scanner</a>
+        
+        <div class="version-info">
+            v1.0.0 | Windows 10/11 | ~5 MB
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mineblaze Checker. Играй честно.</p>
+    </footer>
+
+</body>
+</html>
